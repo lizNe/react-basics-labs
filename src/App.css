@@ -1,4 +1,4 @@
-h1 {
+/*h1 {
   text-align: center;
   background-color: grey;
   color: white;
@@ -7,7 +7,8 @@ h1 {
   border: none;
   border-radius: 4px;
 }
-
+*/
+/*
 div {
   padding: 20px;
 }
@@ -15,8 +16,9 @@ div {
 .container{
   text-align: center;
 }
+*/
 
-.card {
+/* .card {
   display: inline-block;
   vertical-align: top;
   font-family: system-ui;
@@ -41,9 +43,9 @@ div {
 font-style:italic;
 font-size: 16px;
 font-weight:light;
-}
+} */
 
-button {
+/* button {
   border: none;
   border-radius: 3px;
   font-style: italic;
@@ -59,16 +61,16 @@ button {
   left: 5px;
   color: green;
 }
+ */
 
-
-.deleteButton {
+/* .deleteButton {
   position: absolute;
   bottom: 5px;
   right: 5px;
   color: red;
-}
+} */
 
-input[type=text], input[type=date] {
+/* input[type=text], input[type=date] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -95,4 +97,4 @@ input[type=submit]:hover {
 
 form {
   text-align: left;
-}
+} */
