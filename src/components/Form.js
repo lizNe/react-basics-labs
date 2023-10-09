@@ -2,6 +2,10 @@ import React from "react";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import FormControl from "@mui/material/FormControl";
+import InputLabel from "@mui/material/InputLabel";
+import Select from "@mui/material/Select";
+import MenuItem from "@mui/material/MenuItem";
 
 const AddTaskForm = (props) => {
 
@@ -44,6 +48,25 @@ const AddTaskForm = (props) => {
         onChange={(event) => props.change(event)}
       />
     </div>
+    <div>
+        <FormControl variant="outlined" sx={{ width: "30ch", mt: 1 }}>
+          <InputLabel id="priority-label">Priority</InputLabel>
+          <Select
+            labelId="priority-label"
+            id="priority"
+            name="priority"
+            label="Priority"
+            onChange={(event) => props.change(event)}
+          >
+            <MenuItem value={"Low"}>Low</MenuItem>
+            <MenuItem value={"Medium"}>Medium</MenuItem>
+            <MenuItem value={"High"}>High</MenuItem>
+          </Select>
+        </FormControl>
+      </div>
+
+
+
     <div>
       <Button 
         type="submit"

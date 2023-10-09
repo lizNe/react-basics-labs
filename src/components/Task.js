@@ -7,6 +7,7 @@ import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
+import Chip from '@mui/material/Chip';
 
 const Task = (props) => {
     
@@ -52,6 +53,12 @@ const Task = (props) => {
                 >
                     {props.description}
                 </Typography>
+                {/* Priority Chip */}
+                <Chip
+                    label={props.priority}
+                    color={getChipColor(props.priority)} // Call a function to determine chip color
+                    sx={{ marginTop: '10px', marginLeft: 'auto' }}
+                />
             </CardContent>
             <CardActions sx={{justifyContent: 'space-between', padding: '20px'}}>
                 <Button variant="contained" size="small" color="success" onClick={props.markDone}>
@@ -64,6 +71,21 @@ const Task = (props) => {
         </Card>
     </Grid>
     )
+
 }
 
+const getChipColor = (priority) => {
+    switch (priority) {
+      case 'Low':
+        return 'primary';
+      case 'Medium':
+        return 'warning';
+      case 'High':
+        return 'error';
+      default:
+        return 'default';
+    }
+  };
+
+  
 export default Task;
