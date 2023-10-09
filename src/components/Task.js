@@ -57,7 +57,8 @@ const Task = (props) => {
                 <Chip
                     label={props.priority}
                     color={getChipColor(props.priority)} // Call a function to determine chip color
-                    sx={{ marginTop: '10px', marginLeft: 'auto' }}
+                    sx={{ marginTop: '10px',
+                        marginLeft: "60px" }}
                 />
             </CardContent>
             <CardActions sx={{justifyContent: 'space-between', padding: '20px'}}>
